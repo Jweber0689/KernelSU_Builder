@@ -115,7 +115,7 @@ jobs:
           ./extract.sh
 
       - name: Make a release
-        uses: softprops/action-gh-release@v5
+        uses: softprops/action-gh-release@v3
         with:
           files: |
              ${{ github.workspace }}/${{ env.ZIP_NO_KSU }}
